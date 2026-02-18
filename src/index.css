@@ -97,6 +97,7 @@ nav {
   border-right: 1px solid rgb(179, 179, 179);
   color: white;
   font-size: 1.2rem;
+  outline: none;
 }
 
 .browse {
