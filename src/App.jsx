@@ -1,5 +1,7 @@
 ﻿import React, { useState, useRef, useEffect } from "react";
 import "./index.css";
+import Header from "./Components/Header.jsx";
+// NavLink wasn't being used; remove unnecessary import
 
 const songs = [
   {
@@ -234,43 +236,7 @@ function App() {
   return (
     <div>
       {/* NavBar */}
-      <nav>
-        <div className="left-half">
-          <div className="logo">
-            <i className="fa-brands fa-spotify"></i>
-          </div>
-          <div className="home-icon">
-            <i className="fa-solid fa-house"></i>
-          </div>
-          <div className="search-bar">
-            <div className="search-icon">
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <input
-              type="text"
-              className="input-box"
-              placeholder="What do you want to play?"
-            />
-            <div className="browse">
-              <i className="fa-solid fa-folder-open"></i>
-            </div>
-          </div>
-        </div>
-        <div className="right-half">
-          <div className="right-half-p1">
-            <p className="nav-text">Premium</p>
-            <p className="nav-text">Support</p>
-            <p className="nav-text">Download</p>
-          </div>
-          <div className="right-half-p2">
-            <div className="nav-text">
-              <i className="fa-regular fa-circle-down"></i> Install App
-            </div>
-            <div className="nav-text">Sign up</div>
-            <button className="login-btn">Log in</button>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Main portion */}
       <div className="main">
